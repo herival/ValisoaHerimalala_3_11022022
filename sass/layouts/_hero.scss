@@ -2,59 +2,27 @@
 
 .hero {
     background-color: utils.$grey-lighter;
-    @include utils.tablet {
-        width: 100%;
-    }
+
     &__wrapper {
         display: flex;
         flex-direction: column;
         padding: 2.5rem;
-        @include utils.tablet {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            align-items: center;
-        }
-        @include utils.desktop {
-            justify-content: space-around;
-            max-width: 1400px;
-            margin: 0 auto;            
-        }
     }
     h1 {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         text-align: center;
         margin: auto;
         padding-bottom: 1rem;
-        @include utils.tablet {
-            text-align: left;
-        }
-        @include utils.desktop {
-            font-size: 1.7rem;
-            text-align: left;
-        }
     }
     p {
-        font-size: 0.9rem;
+        font-size: 1.0rem;
         font-weight:300;
         text-align: center;
         padding-bottom: 1.5rem; 
-        @include utils.tablet {
-            text-align: left;
-            max-width: 400px;
-        }
-        @include utils.desktop {
-            font-size: 1.3rem;
-            text-align: left;
-            max-width: 550px;
-        }
     }
     &__btn {
         display: flex;
         justify-content: center;
-        @include utils.tablet {
-            height: 100%;           
-        }
         .btn-submit {
             @include utils.btn-submit
         }

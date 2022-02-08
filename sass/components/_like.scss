@@ -3,5 +3,6 @@
 //Component "Like"
 .fill {
     @include utils.like;
-    color : blue;
+    color : gray;
+    font-size: larger;
 }    
