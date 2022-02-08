@@ -1,0 +1,12 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "OhMyFood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch sass/main.scss:public/css/style.css",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
+  },
+  "author": "Heri",
+  "license": "ISC"
+}

@@ -1,0 +1,7 @@
+@use "../utils";
+
+//Component "Like"
+.fill {
+    @include utils.like;
+    color : blue;
+}    
