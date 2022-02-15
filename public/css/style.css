@@ -25,8 +25,8 @@ a {
   content: "Nouveau";
   font-size: 0.9rem;
   font-weight: bold;
-  padding: 0.7em;
-  border-radius: 0.5rem;
+  padding: 0.5em 1em 0.5em 1em;
+  border-radius: 0.1rem;
   background-color: #99E2D0;
   color: #278870;
   position: absolute;
@@ -246,7 +246,7 @@ main .main__background .articles article {
 .card {
   border-radius: 1rem;
   background-color: white;
-  box-shadow: 0 7px 14px rgba(0, 0, 0, 0.12), 0 10px 10px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 5px 5px rgba(0, 0, 0, 0.24);
 }
 .card__img {
   width: 100%;
@@ -315,6 +315,7 @@ main .main__background .articles article {
 .menu__starter h2, .menu__middle h2, .menu__end h2 {
   margin: 2rem 4%;
   font-weight: lighter;
+  font-size: 1.2rem;
   position: relative;
   text-transform: uppercase;
 }
@@ -333,7 +334,7 @@ main .main__background .articles article {
   border-radius: 1rem;
   max-width: 100%;
   overflow: hidden;
-  box-shadow: 0 7px 14px rgba(0, 0, 0, 0.12), 0 10px 10px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 5px 5px rgba(0, 0, 0, 0.24);
 }
 .menu__card-content {
   display: flex;
@@ -346,14 +347,14 @@ main .main__background .articles article {
   margin: 1rem 1rem 1rem 1rem;
 }
 .menu__card-content-text h3 {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   margin-bottom: 0.2rem;
 }
 .menu__card-content-text p {
-  font-size: 0.75rem;
+  font-size: 1rem;
   white-space: nowrap;
   overflow: hidden;
   font-weight: lighter;
@@ -363,7 +364,7 @@ main .main__background .articles article {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  font-size: 0.7rem;
+  font-size: 1rem;
   font-weight: bold;
   padding: 0 3rem 1rem 0;
   transition-duration: 0.8s;

@@ -1,9 +1,6 @@
 @use "../utils";
 
 
-//Loader
-
-
 //Index layout
 main {
     .main__background {
@@ -31,7 +28,7 @@ main {
 .card {
     border-radius: 1rem;
     background-color: white;
-    @include utils.simple-shadow;
+    @include utils.article-shadow;
     &__img {
         width: 100%;
         height: 200px;

@@ -38,6 +38,7 @@
         h2 {
             margin: 2rem 4%;
             font-weight: lighter;
+            font-size: 1.2rem;
             position: relative;
             text-transform: uppercase;
             &::before {
@@ -57,7 +58,7 @@
         border-radius: 1rem;
         max-width: 100%;
         overflow: hidden;
-        @include utils.simple-shadow;
+        @include utils.article-shadow;
         &-content {
             display: flex;
             justify-content: space-between;
@@ -67,14 +68,14 @@
                 width: 100%;
                 margin: 1rem 1rem 1rem 1rem;
                 h3 {
-                    font-size: 0.8rem;
+                    font-size: 1.2rem;
                     white-space: nowrap;
                     overflow: hidden;
                     text-overflow: ellipsis;
                     margin-bottom: 0.2rem;
                 }
                 p {
-                    font-size: 0.75rem;
+                    font-size: 1rem;
                     white-space: nowrap;
                     overflow: hidden;
                     font-weight: lighter;
@@ -86,7 +87,7 @@
             display: flex;
             justify-content: flex-end;
             align-items: flex-end;
-            font-size: 0.7rem;
+            font-size: 1rem;
             font-weight: bold;
             padding: 0 3rem 1rem 0;
             transition-duration: 0.8s;
