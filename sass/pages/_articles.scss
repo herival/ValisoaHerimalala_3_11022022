@@ -64,3 +64,18 @@ main {
         right: 1.5rem;       
     }
 }
+
+//Loader
+.loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    z-index: 3;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    animation: disappear 3s ease-in-out forwards;
+    @include utils.loader;
+}
