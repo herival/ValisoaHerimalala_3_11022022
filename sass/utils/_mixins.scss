@@ -131,8 +131,8 @@
     &__spinner {
         width: 100px;
         height: 100px;
-        border: 3px solid variables.$color-primary;
         border-radius: 50%;
+        border: 3px solid variables.$color-primary;
         border-bottom-color: white;
         position: absolute;
         top: 30%;

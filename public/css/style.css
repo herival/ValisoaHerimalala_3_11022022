@@ -300,8 +300,8 @@ main .main__background .articles article {
 .loader__spinner {
   width: 100px;
   height: 100px;
-  border: 3px solid #9356DC;
   border-radius: 50%;
+  border: 3px solid #9356DC;
   border-bottom-color: white;
   position: absolute;
   top: 30%;
