@@ -59,6 +59,7 @@
         max-width: 100%;
         overflow: hidden;
         @include utils.article-shadow;
+        @include utils.checked;
         &-content {
             display: flex;
             justify-content: space-between;
@@ -93,8 +94,8 @@
             transition-duration: 0.8s;
             transition-timing-function: ease;
         }
-        .icon {
-            width: 5rem;
+        .checked {
+            width: 7rem;
             background: #99e2d0;
             display: flex;
             justify-content: center;

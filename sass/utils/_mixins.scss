@@ -135,7 +135,7 @@
         border: 3px solid variables.$color-primary;
         border-bottom-color: white;
         position: absolute;
-        top: 30%;
+        top: 200px;
         animation: scale 1s ease-in-out 3;
     }
     @keyframes scale {
@@ -151,16 +151,37 @@
             opacity: 0.5;
         }
         90% {
-            transform: translateY(0%);
+            opacity: 0.3 ;
+            // transform: translateY(0%);
+            
         }
 
         99% {
-            height:100%;
+            opacity: 0.2;
+            // height:100%;
         }
         100% {
             opacity: 0;
-            height: 0;
-            display: none;
+            z-index: -1;
         }
     }
+}
+
+//Card checked
+@mixin checked {
+    &:hover .checked{
+        transform: translateX(-6rem);
+        opacity: 1;
+        transition-duration: 0.5s;
+        transition-timing-function: ease;
+        .fa-check {
+            transform: rotate(360deg);
+            transition-duration: 0.5s;
+        }
+    }
+    &:hover .menu__card-price {
+        margin-right: 3rem;
+        transition-duration: 0.4s;
+        transition-timing-function: ease;
+    }   
 }
