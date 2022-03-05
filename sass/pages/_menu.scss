@@ -18,6 +18,9 @@
     width: 100%;
     z-index: 1;
     position: relative;
+    @include utils.desktop {
+        width: 80%;
+    }
     &__name {
         border-radius: 1rem 1rem 0 0;
         display: flex;
@@ -50,6 +53,34 @@
                 width: 4ch;
             }
         }
+        @include utils.desktop {
+            h2 {
+                margin: 2rem 20%;
+                text-align: center;
+
+                &::before {
+                    width: 15vw;
+                    margin: auto;
+                    text-align: center;
+                    left: 50%; 
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+        @include utils.tablet {
+            h2 {
+                margin: 2rem 20%;
+                text-align: center;
+
+                &::before {
+                    width: 15vw;
+                    margin: auto;
+                    text-align: center;
+                    left: 50%;
+                    transform: translate(-50%, -50%); 
+                }
+            }
+        }
     }
     &__card {
         background-color: white;
@@ -58,6 +89,9 @@
         border-radius: 1rem;
         max-width: 100%;
         overflow: hidden;
+        @include utils.desktop {
+            margin: 1em 20%;
+        }
         @include utils.article-shadow;
         @include utils.checked;
         &-content {

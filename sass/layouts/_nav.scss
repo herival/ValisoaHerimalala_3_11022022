@@ -12,22 +12,30 @@ nav{
         margin: 0 auto;
         ul {
             list-style: none;
-            counter-reset: listCounter;
+            @include utils.desktop {
+                display: flex;
+                gap: 3rem;
+                justify-content:center ;  
+            }
         }
+
         li {
             display: flex;
             margin: 1rem auto;
             margin-left: 0.5rem;
-            counter-increment: listCounter;
             position: relative;
-           
             &:hover {
                 background-color: utils.$color-primary-light;
             }
             &:hover .fas {
                 color: utils.$color-primary;
             }
+            @include utils.desktop {
+                width: 100%;
+            }
+
         }
+
         button {   
             background-color: transparent;
             border: none;

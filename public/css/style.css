@@ -165,13 +165,18 @@ nav .function {
 }
 nav .function ul {
   list-style: none;
-  counter-reset: listCounter;
+}
+@media screen and (min-width: 1280px) {
+  nav .function ul {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+  }
 }
 nav .function li {
   display: flex;
   margin: 1rem auto;
   margin-left: 0.5rem;
-  counter-increment: listCounter;
   position: relative;
 }
 nav .function li:hover {
@@ -179,6 +184,11 @@ nav .function li:hover {
 }
 nav .function li:hover .fas {
   color: #9356DC;
+}
+@media screen and (min-width: 1280px) {
+  nav .function li {
+    width: 100%;
+  }
 }
 nav .function button {
   background-color: transparent;
@@ -232,6 +242,13 @@ main .main__background {
   padding: 3rem 0 1rem 0;
   background-color: #F6F6F6;
 }
+@media screen and (min-width: 1280px) {
+  main .main__background {
+    max-width: 1800px;
+    margin: 0 auto;
+    border-radius: 1rem 1rem 0 0;
+  }
+}
 main .main__background h2 {
   font-size: 1.2rem;
   margin-bottom: 1rem;
@@ -245,6 +262,14 @@ main .main__background .articles {
 }
 main .main__background .articles article {
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  main .main__background .articles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 2rem;
+  }
 }
 
 .card {
@@ -346,6 +371,11 @@ main .main__background .articles article {
   z-index: 1;
   position: relative;
 }
+@media screen and (min-width: 1280px) {
+  .menu {
+    width: 80%;
+  }
+}
 .menu__name {
   border-radius: 1rem 1rem 0 0;
   display: flex;
@@ -377,6 +407,32 @@ main .main__background .articles article {
   height: 3px;
   width: 4ch;
 }
+@media screen and (min-width: 1280px) {
+  .menu__starter h2, .menu__middle h2, .menu__end h2 {
+    margin: 2rem 20%;
+    text-align: center;
+  }
+  .menu__starter h2::before, .menu__middle h2::before, .menu__end h2::before {
+    width: 15vw;
+    margin: auto;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu__starter h2, .menu__middle h2, .menu__end h2 {
+    margin: 2rem 20%;
+    text-align: center;
+  }
+  .menu__starter h2::before, .menu__middle h2::before, .menu__end h2::before {
+    width: 15vw;
+    margin: auto;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
 .menu__card {
   background-color: white;
   margin: 1rem 4%;
@@ -385,6 +441,11 @@ main .main__background .articles article {
   max-width: 100%;
   overflow: hidden;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 5px 5px rgba(0, 0, 0, 0.24);
+}
+@media screen and (min-width: 1280px) {
+  .menu__card {
+    margin: 1em 20%;
+  }
 }
 .menu__card:hover .checked {
   transform: translateX(-6rem);

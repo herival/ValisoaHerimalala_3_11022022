@@ -1,5 +1,5 @@
 @use "./variables";
-@use "./maps";
+@use "./responsive";
 
 //Design
 
@@ -184,4 +184,22 @@
         transition-duration: 0.4s;
         transition-timing-function: ease;
     }   
+}
+
+@mixin tablet {
+    @media screen and (min-width: map-get(responsive.$breakpoints, tablet)) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: map-get(responsive.$breakpoints, desktop)) {
+        @content;
+    }
+}
+
+@mixin large {
+    @media screen and (min-width: map-get(responsive.$breakpoints,largest)) {
+        @content;
+    }
 }
