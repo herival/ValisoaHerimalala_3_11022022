@@ -48,10 +48,10 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   background-clip: text;
   -webkit-background-clip: text;
-  color: transparent;
   -webkit-text-fill-color: transparent;
   transition-duration: 1s;
   -webkit-transition-duration: 1s;
+  color: transparent;
 }
 
 .banner {
@@ -174,6 +174,7 @@ nav .function ul {
   }
 }
 nav .function li {
+  counter-increment: listCounter;
   display: flex;
   margin: 1rem auto;
   margin-left: 0.5rem;

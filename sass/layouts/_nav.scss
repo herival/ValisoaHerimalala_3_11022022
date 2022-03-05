@@ -20,6 +20,7 @@ nav{
         }
 
         li {
+            counter-increment: listCounter;
             display: flex;
             margin: 1rem auto;
             margin-left: 0.5rem;

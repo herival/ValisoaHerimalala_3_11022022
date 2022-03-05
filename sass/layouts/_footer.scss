@@ -1,8 +1,6 @@
 @use "../utils";
 @import "../utils/responsive";
 
-//General layout
-
 footer {
     color: white;
     background-color: utils.$grey-darker;
@@ -28,8 +26,6 @@ footer {
         width: 20px;
     }
 }
-
-//Content layout
 
 .footer {
     &__content {
