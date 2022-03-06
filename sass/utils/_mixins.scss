@@ -111,6 +111,24 @@
 }
 
 @mixin loader {
+    
+    
+    @keyframes disappear {
+        50% {
+            opacity: 0.5;
+        }
+        90% {
+            opacity: 0.3 ;
+        }
+        99% {
+            opacity: 0.2;
+        }
+        100% {
+            opacity: 0;
+            z-index: -1;
+            height: 100%;
+        }
+    }
     &__spinner {
         width: 100px;
         height: 100px;
@@ -129,23 +147,7 @@
             transform: rotate(360deg);
         }
     }
-    @keyframes disappear {
-        50% {
-            opacity: 0.5;
-        }
-        90% {
-            opacity: 0.3 ;
-            
-        }
 
-        99% {
-            opacity: 0.2;
-        }
-        100% {
-            opacity: 0;
-            z-index: -1;
-        }
-    }
 }
 
 @mixin checked {
@@ -166,6 +168,11 @@
     }   
 }
 
+@mixin mobile {
+    @media screen and (max-width: map-get(responsive.$breakpoints, mobile)) {
+        @content;
+    } 
+}
 @mixin tablet {
     @media screen and (min-width: map-get(responsive.$breakpoints, tablet)) {
         @content;
