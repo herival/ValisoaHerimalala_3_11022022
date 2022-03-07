@@ -184,7 +184,7 @@ nav .function li:hover {
   background-color: #F5EDFF;
 }
 nav .function li:hover .fas {
-  color: #9356DC;
+  color: #8f5fca;
 }
 @media screen and (min-width: 1280px) {
   nav .function li {
@@ -209,7 +209,7 @@ nav .function button::before {
   border-radius: 50%;
   color: white;
   font-weight: bold;
-  background-color: #9356DC;
+  background-color: #8f5fca;
   position: absolute;
   left: -0.95em;
   top: 1.45em;
@@ -343,7 +343,7 @@ main .main__background .articles article {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  border: 3px solid #9356DC;
+  border: 3px solid #8f5fca;
   border-bottom-color: white;
   position: absolute;
   top: 200px;
